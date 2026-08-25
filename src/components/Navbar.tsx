@@ -58,8 +58,8 @@ export default function Navbar() {
         <Announcement />
         <div
           className={cx(
-            "relative transition-all duration-500",
-            scrolled ? "border-b border-line/80 bg-ivory-soft/85 shadow-[0_10px_40px_rgba(43,29,34,0.07)] backdrop-blur-xl" : "bg-transparent"
+            "relative border-b border-line/80 bg-ivory-soft/95 backdrop-blur-xl transition-shadow duration-500",
+            scrolled && "shadow-[0_10px_40px_rgba(43,29,34,0.07)]"
           )}
         >
           <div className="mx-auto flex h-[64px] max-w-[1520px] items-center justify-between gap-4 px-4 md:h-[76px] md:px-8">
